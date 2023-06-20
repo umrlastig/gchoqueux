@@ -5,13 +5,13 @@ This repository contains a template for the homepage of the LASTIG researchers. 
 
 ## Create a Github account and get invited in UMR LASTIG organization
 The first step is to create an account on Github and to become a member of the [UMR LASTIG organization on Github](https://github.com/umrlastig/).
-The website architecture is described in the image below. Github repositories are contained in the [UMR LASTIG organization](https://github.com/umrlastig/). There is one repository for the [homepage of the lab](https://github.com/umrlastig/umrlastig.github.io), one repository for the homepage of each of the four research teams (e.g. [GEOVIS team repository](https://github.com/umrlastig/geovis)), and one repository for each member of the LASTIG to host his/her homepage (e.g. [Guillaume Touya's homepage repository](https://github.com/umrlastig/guillaume-touya)). The architecture of the website was designed this way for a simple management of administration rights: as each researcher creates his/her own repository to host his/her homepage, each researcher is the administrator of the homepage, and has the responsibility to keep it up-to-date.
+The website architecture is described in the image below. Github repositories are contained in the [UMR LASTIG organization](https://github.com/umrlastig/). There is one repository for the [homepage of the lab](https://github.com/umrlastig/umrlastig.github.io), one repository for the homepage of each of the four research teams (e.g. [GEOVIS team repository](https://github.com/umrlastig/geovis)), and one repository for each member of the LASTIG to host his/her homepage (e.g. [Gérald Choqueux's homepage repository](https://github.com/umrlastig/gchoqueux)). The architecture of the website was designed this way for a simple management of administration rights: as each researcher creates his/her own repository to host his/her homepage, each researcher is the administrator of the homepage, and has the responsibility to keep it up-to-date.
 
 ![LASTIG website architecture](img/website_architecture.png)
 
 A template to build a homepage is provided in the [firstname-lastname-template repository](https://github.com/umrlastig/firstname-lastname-template). The following sections of this tutorial explain how to use this template.
 
-To get invited in this LASTIG organization, please contact one of the administrators of the organization (for instance one person among Guillaume Touya, Imran Lokhat, Sidonie Christophe, Clément Mallet, Bruno Vallet, Arnaud Le Guilcher, Mathieu Brédif, Marie-Dominique Van Damme) with the login of your Github account.
+To get invited in this LASTIG organization, please contact one of the administrators of the organization (for instance one person among Gérald Choqueux, Imran Lokhat, Sidonie Christophe, Clément Mallet, Bruno Vallet, Arnaud Le Guilcher, Mathieu Brédif, Marie-Dominique Van Damme) with the login of your Github account.
 
 ## Create your homepage repository
 Once you are a member of the [UMR LASTIG organization](https://github.com/umrlastig/), you can create a new repository on the Github website by clicking on the green up-right button "New". Then, you have to give information on your repository (see the example in the image below). Please select a "Public" repository, it will help for the management of the website, and check the box "Initialize this repository with a README".
@@ -107,7 +107,7 @@ To update the content of the template, you just have to edit the html file **ind
 >     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-0">Guillaume
-          <span class="text-primary">Touya</span>
+          <span class="text-primary">Choqueux</span>
         </h1>
         ...
 
@@ -175,10 +175,10 @@ Only some advanced modification of the template requires the edition of the main
 ### Photo
 If you want to put a photo (it is recommended but not forced), please use a square 256*256 photo to make sure the photo is nicely displayed in the "members" sections of the website.
 
-The location of the photo file is defined in the first lines of the *index.html* (here img/touya.png):
+The location of the photo file is defined in the first lines of the *index.html* (here img/gchoqueux.png):
 
 >     <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/touya.png" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/gchoqueux.png" alt="">
       </span>
 
 ### Publications
@@ -186,9 +186,9 @@ The location of the photo file is defined in the first lines of the *index.html*
 The "Publications" section is generated from the HAL repository of each researcher, using the hal.js library. To have your publications displayed inside your homepage you have to:
 
 1. Fill your HAL repository with all your publications.
-2. Edit the HAL-id used when the page is loaded: in the index.html, modify the line below by changing 'guillaume-touya' to your own HAL-id.
+2. Edit the HAL-id used when the page is loaded: in the index.html, modify the line below by changing 'gerald-choqueux' to your own HAL-id.
 
-> \<body id="page-top" onload="reviewingVis('reviewing.json');getJournalPublicationsAuthor('guillaume-touya');getConfPublicationsAuthor('guillaume-touya');getBookPublicationsAuthor('guillaume-touya');getOtherPublicationsAuthor('guillaume-touya');">
+> \<body id="page-top" onload="reviewingVis('reviewing.json');getJournalPublicationsAuthor('gerald-choqueux');getConfPublicationsAuthor('gerald-choqueux');getBookPublicationsAuthor('gerald-choqueux');getOtherPublicationsAuthor('gerald-choqueux');">
 
 3. If you want to change the style or the categories, please feel free to edit your copy of the hal.js library.
 
